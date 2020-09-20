@@ -25,3 +25,8 @@ PRODUCT_MODEL := SM6250
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Gapps
+ifeq ($(WITH_GAPPS),true)
+include vendor/pixelgapps/pixel-gapps.mk
+endif
